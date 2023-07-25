@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <title>Chinese Restaurant</title>
+        <link rel="icon" href="food.svg" type="image">
+    <style>
+       
+        * {
+            margin: 0px;
+        }
+
+        .container {
+            background-image: url("Food_jpg_auto_x2-transformed.jpeg");
+            height: 700px;
+            background-size: cover;
+        }
+
+        .ResName {
+            color: gainsboro;
+            position: absolute;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            top: 30%;
+            left: 5%;
+            font-size: 5rem;
+            letter-spacing: 5px;
+
+        }
+
+        #green {
+            color: green;
+        }
+
+        #quote {
+            height: 30px;
+            font-size: 1.5rem;
+            position: absolute;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            top: 65%;
+            left: 5%;
+            color: gainsboro;
+            background-color: black;
+            width: 400px;
+            padding: 4px;
+            border-radius: 10px;
+
+        }
+
+
+        .Horizontal-list {
+            float: right;
+            list-style: none;
+            margin-top: 10px;
+            margin-right: 50px;
+        }
+
+        .Horizontal-list li {
+
+            display: inline-block;
+            margin: 15px 8px 8px 15px;
+            font-weight: 100;
+            font-size: 1.1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-menu li a {
+            transition: color 0.5s, border-bottom 4s;
+        }
+
+        .Horizontal-list li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .nav-menu li a:hover {
+            color: lightgrey;
+            border-bottom: 1px solid white;
+        }
+
+     #btn{
+        border: 1px solid black;
+        height: 40px;
+        border-radius: 5px;
+        width: 100px;
+        background-color: orangered;
+        color: black;
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        top: 80%;
+        left: 5%;
+     }   
+  #btn:hover{
+    border: 2px solid white;
+   
+  }
+
+        .icons {
+            height: 30px;
+            width: 150px;
+            font-size: 23px;
+            position: relative;
+            right: 16px;
+            top: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .boxes span {
+            font-size: 25px;
+            color: #4a0105;
+            font-family: serif;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .boxes p {
+            font-size: 16px;
+            color: #4a0105;
+            font-family: serif;
+            padding-top: 20px;
+        }
+
+        .boxes a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #4a0105;
+            font-family: serif;
+        }
+
+        .boxes ul {
+            list-style-type: none;
+        }
+        .box1{
+            margin-top: 50px;
+        }
+        .box3{
+            margin-bottom: 68px;
+        }
+        .box4{
+            margin-bottom: 30px;
+        }
+        .Recipie-Container{
+            position: relative;
+            left: 14%;
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 60px;
+          justify-content: space-around;
+        }
+        .card1{
+             height: 400px;
+             width: 300px;
+        }
+        #Head{
+            color: #A62B00;
+            font-weight: lighter;
+            letter-spacing: 1px;
+        }
+        #Sub-Text{
+            font-weight: lighter;
+            font-size: 16px;
+        }
+        #Sub-Text:hover{
+            color: #4a0105;
+            
+        }
+  
+       #nav{
+       position: absolute;
+       top: 0;
+       right: 0px;
+       }
+       span img {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+       }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </style
+     
+
+</head>
+
+<body>
+
+   
+  <section id="home">
+    <div class="container" id="container">
+        <header id="body-header">
+            <span > 
+                <img src="food.png" alt="" height="40px" width="40px">
+              
+            </span>
+            <nav id="nav">
+                <ul class="Horizontal-list text-center nav-menu">
+                    <li>
+                        <a href="#home" >Home</a>
+
+                    </li>
+
+                    <li>
+                        <a href="#recipies">Recipes</a>
+
+                    </li>
+
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+
+                    <li>
+                        <a href="#"></a>
+                    </li>
+
+
+                </ul>
+
+            </nav>
+        </header>
+        <div class="ResName" id="ResName">THE <span id="green">CHINESE</span><br>
+            RESTAURANT <br>
+
+        </div>
+        <span id="quote">
+            <p>Have a sip, survive the work week</p>
+        </span>
+        <a href="Main.html"><button   class="btn" id="btn">Order Now!</button></a>
+    </div>
+    </section>
+ <br><br>
+    <section id="recipies">
+      
+        <center><h2 style="font-size:32px; color:#A62B00  ;font-weight:lighter; ">Popular Recipes</h2></center>
+
+        <div class="Recipie-Container">
+            <div class="card1">
+                <a href=""><img
+                    src="https://static.wixstatic.com/media/913019_6f80cb4e2d994b6abf0f2645fcbab5c7~mv2.jpg/v1/fill/w_290,h_386,fp_0.50_0.50,q_90,enc_auto/913019_6f80cb4e2d994b6abf0f2645fcbab5c7~mv2.jpg"
+                    height="360px" width="290px"></a>
+                    <br><br>
+                <span id="Head">The Perfect Key-Lime Pie</span><br><br>
+                <p id="Sub-Text">Create a blog post subtitle that summarizes <br>
+                post in a few short,punchy sentence...</p>
+
+            </div>
+            <div class="card2">
+                <a href=""><img
+                    src="https://static.wixstatic.com/media/913019_b6d3cb952a384989acfb49a08a5539b7~mv2.jpg/v1/fill/w_290,h_386,fp_0.50_0.50,q_90,enc_auto/913019_b6d3cb952a384989acfb49a08a5539b7~mv2.jpg"
+                    height="360px" width="290px"></a>
+                    <br><br>
+                <span id="Head">100% Artisan Bread</span><br><br>
+                <p id="Sub-Text">Create a blog post subtitle that summarizes <br>
+                post in a few short,punchy sentence...</p>
+            </div>
+            <div class="card3">
+                <a href=""><img
+                    src="https://static.wixstatic.com/media/913019_6ff80742cc5f42b79b7e7ebda2f7b678~mv2.jpg/v1/fill/w_289,h_386,fp_0.50_0.50,q_90,enc_auto/913019_6ff80742cc5f42b79b7e7ebda2f7b678~mv2.jpg"
+                    height="360px" width="290px"></a>
+                    <br><br>
+                    <span id="Head">Strawberry Shortcake</span><br><br>
+                    <p id="Sub-Text">Create a blog post subtitle that summarizes <br>
+                    post in a few short,punchy sentence...</p>
+            </div>
+        </div>
+
+
+
+    
+    </section>
+    <div class="boxes">
+        <div class="box1">
+            <span>Flour & Butter</span>
+            <p>I'm a paragraph. Click here to add your <br>own text and edit me. Let your users get to<br>
+                know you</p>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook-f fa-xl" style="color: #19191a;;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #19191a;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color: #19191a;"></i></a>
+            </div>
+            <p style="margin-top: 15px;">© 2035 by Flour & Butter.<br>
+                Powered and secured by Wix</p>
+        </div>
+        <div class="box2">
+            <span style="margin-left: 35px;">Site</span>
+            <ul>
+                <li>
+                    <a href="">My Recipes</a>
+                </li><br>
+                <li>
+                    <a href="">My Book</a>
+                </li><br>
+                <li>
+                    <a href="">About</a>
+                </li><br>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="box3">
+            <span style="margin-left: 35px;">Contact</span>
+            <ul>
+                <li><a href="#">abc@gmail.com</a></li><br>
+                <li><a href="">123-456-7890</a></li>
+            </ul>
+        </div>
+        <div class="box4">
+            <span style="margin-left: 35px;">Legal</span>
+            <ul>
+                <li><a href="">FAQ</a></li><br>
+                <li><a href="">Shipping & Returns</a></li><br>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
